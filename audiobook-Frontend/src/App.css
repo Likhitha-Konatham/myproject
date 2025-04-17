@@ -1,0 +1,11 @@
+.pagesall{
+  overflow: auto;
+}
+
+.pagesall::-webkit-scrollbar{
+  display: none;
+}
+
+.dashboard::-webkit-scrollbar{
+  display: none;
+}

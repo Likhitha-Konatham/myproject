@@ -1,0 +1,44 @@
+.main-content {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar_container {
+    width: 4.5%;
+    background-color: var(--bg-primary);
+}
+
+.viewbookmarks_container {
+    width: 95.5%;
+    overflow: hidden;
+    background: var(--bg-secondary);
+}
+
+.header_container {
+    width: 100%;
+}
+
+.view_bookmarks_body {
+    width: 100%;
+    display: flex;
+}
+
+.view_bookmarks_body .view_bookmarks_container {
+    width: 100%;
+}
+
+.view_bookmarks_body .view_bookmarks_container .viewBookmarksCarousel {
+    width: 100%;
+    margin-top: 3vw;
+}
+
+/* Theme Variables */
+body.light {
+    --bg-primary: #ffffff;
+    --bg-secondary: #FAFAFA;
+}
+
+body.dark {
+    --bg-primary: #2c2c2c;
+    --bg-secondary: #1e1e1e;
+}

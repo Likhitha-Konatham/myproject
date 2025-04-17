@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body.light {
+    --bg-primary: #f5f5f5;
+    --bg-secondary: #ffffff;
+    --text-primary: #000000;
+    --text-secondary: #abafb1;
+    --input-bg: rgba(239, 241, 249, 0.6);
+    --button-bg: #a63e71;
+    --button-text: #ffffff;
+    --error-text: #ff0000;
+}
+
+body.dark {
+    --bg-primary: #1e1e1e;
+    --bg-secondary: #2a2a2a;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --input-bg: #2c2c2c;
+    --button-bg: #4a90e2;
+    --button-text: #ffffff;
+    --error-text: #ff6b6b;
+}
+
+.signin-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-primary);
+    margin: 0;
+    overflow: hidden;
+}
+
+.signin-page header {
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+}
+.inputfield-inside:-webkit-autofill {
+    background-color: var(--input-background) !important;
+    color: var(--text-primary) !important;
+    -webkit-text-fill-color: var(--text-primary) !important;
+    transition: background-color 5000s ease-in-out 0s; /* Prevents the browser from overriding */
+}
+
+
+.signin-container {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 24.832vw;
+    height: auto;
+    max-height: 90vh;
+    padding: 2.604vw 2.084vw;
+    background-color: var(--bg-secondary);
+    border-radius: 0.938vw;
+    box-shadow: 0 0.208vw 0.312vw rgba(0, 0, 0, 0.1);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.left-arrow-icon,
+.right-arrow-icon {
+    width: 2vw;
+    height: 2vw;
+    margin: 0 0.5vw;
+}
+
+.left-arrow-icon :disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.right-arrow-icon :disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.book-logo-icon {
+    width: 3vw;
+    height: 3vw;
+    margin: 0 0.5vw;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booklogo-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.772vw;
+    margin-bottom: 2vw;
+}
+
+.booklogo-img {
+    width: 4.046vw;
+    height: 4.0646vw;
+}
+
+.booklogo-heading-text .heading-text-wrapper {
+    color: var(--text-primary);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.146vw;
+    font-weight: 500;
+}
+
+.signin-form {
+    display: flex;
+    max-width: 100%;
+    width: 28.5568vw;
+    flex-direction: column;
+    align-items: center;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    justify-content: flex-start;
+}
+
+.signin-form-group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.1983vw;
+    color: var(--text-secondary);
+    justify-content: flex-start;
+}
+
+.visibilityIcon {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  body.dark  .visibilityIcon .icon {
+    filter: invert(0.5);
+  }
+
+.signin-input-fields {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inputfield-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.inputfield-container {
+    border-radius: 0.609vw;
+    background-color: var(--input-bg);
+    display: flex;
+    min-height: 1.8235vw;
+    width: 85%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.625vw 1.1983vw;
+    margin: 0.521vw;
+}
+
+.inputfield-content {
+    display: flex;
+    width: 100%;
+    gap: 0.7815vw;
+    justify-content: flex-start;
+    flex: 1;
+    flex-wrap: wrap;
+    height: 100%;
+    border: 0;
+    outline: 0;
+}
+
+.inputfield-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 1.8235vw;
+    margin: 0 0;
+}
+
+.inputfield-inside {
+    min-width: 12.5vw;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 1.133vw;
+    
+    color: var(--text-primary);
+}
+
+.passwordInputContainer {
+    border-radius: 0.609vw;
+    background-color: var(--input-bg);
+    display: flex;
+    min-height: 1.8235vw;
+    width: 85%;
+    margin: 0.521vw;
+    max-width: 28.5568vw;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.625vw 1.1983vw;
+}
+
+.passwordInputContent {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 0.7815vw;
+    justify-content: flex-start;
+    flex: 1;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.passwordIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 1.8235vw;
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.passwordField {
+    align-self: stretch;
+    min-width: 12.5vw;
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 1.133vw;
+
+    color: var(--text-primary);
+}
+
+.passwordField:focus {
+    outline: 0;
+    border: none;
+}
+
+.visibilityIcon {
+    aspect-ratio: 0.96;
+    object-fit: contain;
+    object-position: center;
+    width: 1.1983vw;
+    align-self: stretch;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.signin-loginLink p {
+    color: var(--text-primary);
+    text-align: center;
+    font-size: 0.9815vw;
+    margin-bottom: 0.7vw;
+    text-decoration: none;
+}
+
+.signin-loginLink p a {
+    text-decoration: none;
+}
+
+.signin-signinButton {
+    align-self: center;
+    border-radius: 0.7vw;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    text-align: center;
+    width: 10.375vw;
+    height: 3.046vw;
+    padding: 0.521vw 1.1983vw;
+    font: 400 1.146vw Inter, sans-serif;
+    border: none;
+    cursor: pointer;
+    margin-top: 1vw;
+}
+
+.forgot-password-div p {
+    color: var(--text-primary);
+    text-align: center;
+    font-size: 0.9815vw;
+    margin: 0 0 0.5vw;
+}
+
+.forgot-password-div p a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 0.052vw;
+    height: 0.052vw;
+    padding: 0;
+    margin: -0.052vw;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.signin-error-message {
+    color: var(--error-text);
+    font-size: 0.84vw;
+    margin-top: 1.08vw;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.signin-loginLink {
+    margin-top: 1.08vw;
+}
